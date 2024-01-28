@@ -6,4 +6,8 @@
     <string name="pw_empty_error_msg">Please input your PW</string>
     <string name="id_pw_not_correct_error_msg">Please check your ID, PW</string>
     <string name="login_success_msg">Success Login!!</string>
+
+    <string name="find_id"><u>아이디 찾기</u></string>
+    <string name="find_pw"><u>비밀번호 찾기</u></string>
+    <string name="join_account"><u>회원가입 하기</u></string>
 </resources>

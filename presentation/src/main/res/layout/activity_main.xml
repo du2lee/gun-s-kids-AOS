@@ -26,8 +26,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/vp_main"
             android:background="@drawable/ic_main_tab_bg"
-            app:tabIndicatorColor="#0019F4"
-            app:tabIconTint="@color/white"/>
+            app:tabIndicatorColor="@color/sub_color"
+            app:tabIconTint="@color/sub_color"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
