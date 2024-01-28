@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Club"
         tools:targetApi="31">
         <activity
+            android:name=".view.club.ClubActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.profile.ProfileEditActivity"
             android:exported="false" />
         <activity

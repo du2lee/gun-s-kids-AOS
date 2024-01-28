@@ -1,15 +1,18 @@
 package com.ehyundai.project.club.view.search
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.AdapterView
 import androidx.fragment.app.viewModels
 import com.ehyundai.project.club.R
 import com.ehyundai.project.club.base.BaseFragment
 import com.ehyundai.project.club.databinding.FragmentSearchBinding
 import com.ehyundai.project.club.view.Club
 import com.ehyundai.project.club.view.ClubAdapter
+import com.ehyundai.project.club.view.club.ClubActivity
 import com.ehyundai.project.club.view.main.MainActivity
 
 class SearchFragment : BaseFragment<FragmentSearchBinding>(R.layout.fragment_search) {
@@ -47,6 +50,15 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(R.layout.fragment_sea
         }
         val adapter = ClubAdapter(context, groupList)
         binding.lvClub.adapter = adapter
+
+        binding.lvClub.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
+            val item = groupList.get(position)
+
+            val intent = Intent(context, ClubActivity::class.java)
+            intent.putExtra("name", item.name)
+            intent.putExtra("date", item.date)
+            startActivity(intent)
+        }
 
         binding.viewModel = viewModel
     }
