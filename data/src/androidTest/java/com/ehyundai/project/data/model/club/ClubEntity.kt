@@ -11,13 +11,13 @@ data class ClubEntity (
     @SerializedName("clubNo")
     val clubNo : String,
     @SerializedName("companyNm")
-    val companyNm : String,
+    val company : String,
     @SerializedName("clubNm")
-    val clubNm : String,
+    val name : String,
     @SerializedName("clubImg")
-    val clubImg : String,
+    val logo : String,
     @SerializedName("memberCount")
-    val memberCount : String,
+    val members : String,
     @SerializedName("createdDate")
-    val createdDate : String,
+    val date : String,
 )

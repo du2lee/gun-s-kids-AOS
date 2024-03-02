@@ -5,16 +5,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ClubResponse (
-    @SerializedName("clubNo")
-    val clubNo : String,
-    @SerializedName("companyNm")
-    val companyNm : String,
-    @SerializedName("clubNm")
-    val clubNm : String,
-    @SerializedName("clubImg")
-    val clubImg : String,
-    @SerializedName("memberCount")
-    val memberCount : String,
-    @SerializedName("createdDate")
-    val createdDate : String,
+    @SerializedName("status")
+    val status: String,
+    @SerializedName("code")
+    val code: String,
+    @SerializedName("data")
+    val data: List<ClubEntity>,
 )
